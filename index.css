@@ -1,0 +1,151 @@
+@font-face {
+    font-family: 'Lato R';
+    src: url(/fonts/lato/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Lato L';
+    src: url(/fonts/lato/Lato-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Lato B';
+    src: url(/fonts/lato/Lato-Bold.ttf);
+}
+
+@keyframes planeta 
+{
+    0% {
+        background-position-x: 0px;
+    }
+
+    100% {
+        background-position-x: -924px;
+    }
+}
+
+@keyframes green-gradient 
+{
+    0% {
+        background-color: rgb(8, 14, 26);
+    }
+
+    50% {
+        background-color: rgb(0, 255, 115);
+    }
+
+    100% {
+        background-color: rgb(8, 14, 26);
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+}
+
+.seccion-1 {
+    background-color: rgb(14, 24, 44);
+    color: rgb(252, 163, 17);
+    font-family: 'Lato R';
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.planeta-tierra {
+    width: 400px;
+    height: 400px;
+    background: url(/img/tierraPNG.png);
+    background-color: rgb(14, 23, 44);
+    background-size: auto;
+    border-radius: 50%;
+    animation-name: planeta;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.seccion-2 {
+    background-color: rgb(8, 14, 26);
+    color: rgb(252, 163, 17);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 3em;
+    font-family: 'Lato R';
+}
+
+.iconos {
+    width: 100%;
+    height: 22vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.green-gradient {
+    animation-name: green-gradient;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    border-radius: 44px;
+    min-height: 110px;
+}
+
+p {
+    font-size: 1.5em;
+    font-family: 'Lato R';
+}
+
+.seccion-3 {
+    background-color: black;
+    color: rgb(252, 163, 17);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.seccion-4 {
+    background-color: rgb(229, 229, 229);
+    color: rgb(14, 23, 44);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer {
+    background-color: rgb(229, 229, 229);
+    color: rgb(14, 23, 44);
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
