@@ -1,6 +1,3 @@
-
-/* FONTS */
-
 @font-face {
     font-family: 'Lato R';
     src: url(/fonts/lato/Lato-Regular.ttf);
@@ -16,9 +13,7 @@
     src: url(/fonts/lato/Lato-Bold.ttf);
 }
 
-/* FONTS */
-
-/* KEYFRAMES */
+/* ///////////////////////////// */
 
 @keyframes planeta 
 {
@@ -31,7 +26,7 @@
     }
 }
 
-@keyframes green-gradient 
+@keyframes animacion-verde-database 
 {
     0% {
         background-color: rgb(8, 14, 26);
@@ -46,23 +41,12 @@
     }
 }
 
-/* KEYFRAMES */
-
+/* ///////////////////////////// */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    width: 100%;
-    height: 100vh;
-}
-
-main {
-    width: 100%;
-    height: 100vh;
 }
 
 /* SECCION 1 */
@@ -79,7 +63,7 @@ main {
     align-items: center;
 }
 
-#world-books {
+#world-books-color {
     color: rgb(252, 163, 17);
 }
 
@@ -90,10 +74,7 @@ main {
     background-color: rgb(12, 21, 39);
     background-size: auto;
     border-radius: 50%;
-    animation-name: planeta;
-    animation-duration: 8s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    animation: planeta 8s linear infinite;
 }
 
 /* SECCION 2 */
@@ -122,11 +103,8 @@ h2 {
     flex-direction: row;
 }
 
-.green-gradient {
-    animation-name: green-gradient;
-    animation-duration: 5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+.animacion-verde-database {
+    animation: animacion-verde-database 5s linear infinite;
     border-radius: 38px;
     height: 12vh;
     width: 100%;
@@ -190,9 +168,7 @@ p {
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;
-    transition-property: all;
-    transition-duration: 1s;
-    transition-timing-function: ease;
+    transition: all 1s ease;
 }
 
 .tarjeta-visitante:hover {
@@ -243,9 +219,7 @@ p {
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;
-    transition-property: all;
-    transition-duration: 1s;
-    transition-timing-function: ease;
+    transition: all 1s ease;
 }
 
 .tarjeta-acaparador:hover {
@@ -296,9 +270,7 @@ p {
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;
-    transition-property: all;
-    transition-duration: 1s;
-    transition-timing-function: ease;
+    transition: all 1s ease;
 }
 
 .tarjeta-coleccionista:hover {
@@ -336,13 +308,13 @@ p {
     border: 10px solid rgb(199, 28, 28);
 }
 
-/* FOOTER */
+/* SECCION 5 */
 
 .seccion-5 {
     background-color: rgb(229, 229, 229);
     color: rgb(14, 23, 44);
     width: 100%;
-    height: 40vh;
+    height: 50vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -354,7 +326,7 @@ p {
 }
 
 .seccion-5 a {
-    ;
+    color: rgb(14, 23, 44);
 }
 
 .redes {
@@ -384,4 +356,21 @@ p {
 .fa-square-envelope:hover {
     color: rgb(234, 67, 53);
     transition: all 0.5s ease;
+}
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    height: 40vh;
+    background-color: rgb(229, 229, 229);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.img-perfil-footer {
+    border-radius: 50%;
+    transform: scale(0.4);
 }
